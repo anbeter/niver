@@ -1,0 +1,1 @@
+WHERE (DATE_FORMAT( niver, '%m-%d' ) BETWEEN '12-30' AND '12-31') OR (DATE_FORMAT( niver, '%m-%d' ) BETWEEN '01-01' AND '01-04') AND status_aviso < 2009  ORDER BY niver

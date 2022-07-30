@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Container class="javax.swing.JTabbedPane" name="jTPMonarquicas">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane6">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="tab1">
+                <Property name="tabTitle" type="java.lang.String" value="tab1"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="jTextArea6">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="Vossa Majestade Real &amp; Imperial (V. M. R. &amp; I.) Usado para: Monarcas que detenham t&#xed;tulos de imperador e rei ao mesmo tempo.&#xa;Vossa Majestade Imperial (V. M. I.) Usado para: Imperadores.&#xa;Vossa Majestade (V. M.) Usado para: Reis.&#xa;Vossa Alteza Real &amp; Imperial (V. A. R. &amp; I.) Usado para: Pr&#xed;ncipes de casas reais e imperiais.&#xa;Vossa Alteza Imperial (V. A. I.) Usado para: Pr&#xed;ncipes de casas imperiais.&#xa;Vossa Alteza Real (V. A. R.) Usado para: Pr&#xed;ncipes e infantes de casas reais.&#xa;Vossa Alteza Seren&#xed;ssima (V. A. S.) Usado para: Pr&#xed;ncipes monarcas e Arquiduques.&#xa;Vossa Alteza (V. A.) Usado para: Duques.&#xa;Vossa Excel&#xea;ncia (V. Ex&#xaa;.) Usado para: Duques com Grandeza, na Espanha.&#xa;Vossa Gra&#xe7;a (V. G.) Usado para: Duques e Condes.&#xa;Vossa Alteza Ilustr&#xed;ssima (V. A. Ilm&#xaa;.) Usado para: Nobres mediatizados, como Condes, na Alemanha.&#xa;O Mui Honor&#xe1;vel (M. Hon) Usado para: Marqueses, na Gr&#xe3;-Bretanha.&#xa;O Honor&#xe1;vel (Hon.) Usado para: Condes (The Right Hon.), Viscondes, Bar&#xf5;es e filhos de Duques, Marqueses e Condes na Gr&#xe3;-Bretanha.&#xa;"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </NonVisualComponents>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jTPCivis" min="-2" pref="604" max="-2" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jTPCivis" min="-2" pref="386" max="-2" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JTabbedPane" name="jTPCivis">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Civis">
+                <Property name="tabTitle" type="java.lang.String" value="Civis"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="jTextArea1">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="Voc&#xea;&apos; (V.) usados para:familiares e amigos&#xa;Vossa Excel&#xea;ncia&apos; (V. Ex&#xaa;.) Usado para: presidente da Rep&#xfa;blica, senadores da Rep&#xfa;blica, ministros de Estado, governadores, deputados federais e estaduais, prefeitos, embaixadores, presidente de c&#xe2;mara de vereadores, c&#xf4;nsules, chefes das Casas Civis e Militares.&#xa;Vossa Magnific&#xea;ncia (V. M.) Usado para: reitores de Universidade, pr&#xf3;-reitores e vice-reitores.&#xa;Vossa Senhoria (V. S&#xaa;.) Usado para: diretores de autarquias federais, estaduais e municipais."/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPOutros">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Outros">
+                <Property name="tabTitle" type="java.lang.String" value="Outros"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane2" alignment="0" pref="599" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane2" alignment="0" pref="361" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTextArea2">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="text" type="java.lang.String" value="Senhor (Sr.) Usado para: Homem, rapaz.&#xa;Senhora (Sr.&#xaa;) Usado para: Mulher mais velha ou casada.&#xa;Senhorita (Srt.&#xaa;) Usado para: Menina, mo&#xe7;a solteira.&#xa;Vossa Senhoria (V. S.&#xaa;) Usado para: Pessoas importantes , como autoridades de uma cidade, como prefeito, algum secret&#xe1;rio da prefeitura.&#xa;Ilustr&#xed;ssimo (Ilmo.) Usado para pessoas comuns, no mesmo sentido de Senhoria, delegados, diretores de alguma autarquia&#xa;Doutor (Dr.) Usado para: M&#xe9;dico. Mas vale lembrar que este modo &#xe9; usado erroneamente, pois doutor deve ser empregado a quem possui doutorado&#xa;Comendador (Com.) Usado para: Comendador.&#xa;Professor (Prof.) Usado para: Professor.&#xa;Padre (Pe.) Usado para padres.&#xa;Pastor (Pr.) Usado para pastores de igrejas evang&#xe9;licas.&#xa;"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPJudiciaria">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Judici&#xe1;ria">
+                <Property name="tabTitle" type="java.lang.String" value="Judici&#xe1;ria"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane3" alignment="0" pref="599" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane3" alignment="0" pref="361" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTextArea3">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="text" type="java.lang.String" value="Vossa Excel&#xea;ncia (V. Ex&#xaa;) Usado Para: desembargadores de Justi&#xe7;a, ministros, procuradores, promotores.&#xa;Merit&#xed;ssimo Juiz (M. Juiz) Usado para: ju&#xed;zes de Direito."/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPMilitares">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Militares">
+                <Property name="tabTitle" type="java.lang.String" value="Militares"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane4" alignment="0" pref="599" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane4" alignment="0" pref="361" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane4">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTextArea4">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="text" type="java.lang.String" value="Vossa Excel&#xea;ncia (V. Ex&#xaa;.) Usado para: Oficias Generais (Almirantes-de-Esquadra, Generais-de-Ex&#xe9;rcito e Tenentes-Brigadeiros; Vice-Almirantes, Generais-de-Divis&#xe3;o e Majores-Brigadeiros; Contra-Almirantes, Generais-de-Brigada e Brigadeiros) e Coron&#xe9;is Comandantes das For&#xe7;as Auxiliares dos Estados e DF (Pol&#xed;cias Militares e Bombeiros Militares).&#xa;Vossa Senhoria (V. S&#xaa;.) Usado para: Demais patentes e gradua&#xe7;&#xf5;es militares.&#xa;"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPEclesiasticas">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Eclesi&#xe1;sticas">
+                <Property name="tabTitle" type="java.lang.String" value="Eclesi&#xe1;sticas"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane5" alignment="0" pref="599" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane5" alignment="0" pref="361" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane5">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTextArea5">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="text" type="java.lang.String" value="Vossa Santidade ( V. S.) Usado para: o Papa.&#xa;Vossa Emin&#xea;ncia (V. Em.&#xaa;) Usado para: cardeais.&#xa;Vossa Excel&#xea;ncia Reverend&#xed;ssima (V. Ex.&#xaa; Revm.&#xaa;) Usado para: arcebispos e bispos.&#xa;Vossa Reverend&#xed;ssima (V. Revm&#xaa;) Usado para: abades, superiores de conventos, monsenhores, outras autoridades eclesi&#xe1;sticas e sacerdotes em geral.&#xa;"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPMonarquicas">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Mon&#xe1;rquicas">
+                <Property name="tabTitle" type="java.lang.String" value="Mon&#xe1;rquicas"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane7" alignment="0" pref="599" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane7" alignment="0" pref="361" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane7">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="jTextArea7">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                    <Property name="text" type="java.lang.String" value="Vossa Majestade Real &amp; Imperial (V. M. R. &amp; I.) Usado para: Monarcas que detenham t&#xed;tulos de imperador e rei ao mesmo tempo.&#xa;Vossa Majestade Imperial (V. M. I.) Usado para: Imperadores.&#xa;Vossa Majestade (V. M.) Usado para: Reis.&#xa;Vossa Alteza Real &amp; Imperial (V. A. R. &amp; I.) Usado para: Pr&#xed;ncipes de casas reais e imperiais.&#xa;Vossa Alteza Imperial (V. A. I.) Usado para: Pr&#xed;ncipes de casas imperiais.&#xa;Vossa Alteza Real (V. A. R.) Usado para: Pr&#xed;ncipes e infantes de casas reais.&#xa;Vossa Alteza Seren&#xed;ssima (V. A. S.) Usado para: Pr&#xed;ncipes monarcas e Arquiduques.&#xa;Vossa Alteza (V. A.) Usado para: Duques.&#xa;Vossa Excel&#xea;ncia (V. Ex&#xaa;.) Usado para: Duques com Grandeza, na Espanha.&#xa;Vossa Gra&#xe7;a (V. G.) Usado para: Duques e Condes.&#xa;Vossa Alteza Ilustr&#xed;ssima (V. A. Ilm&#xaa;.) Usado para: Nobres mediatizados, como Condes, na Alemanha.&#xa;O Mui Honor&#xe1;vel (M. Hon) Usado para: Marqueses, na Gr&#xe3;-Bretanha.&#xa;O Honor&#xe1;vel (Hon.) Usado para: Condes (The Right Hon.), Viscondes, Bar&#xf5;es e filhos de Duques, Marqueses e Condes na Gr&#xe3;-Bretanha.&#xa;"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

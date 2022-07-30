@@ -1,0 +1,11 @@
+SELECT count(cod_aniversariante) FROM aniversariante WHERE ((DATE_FORMAT( niver, '%m-%d' ) BETWEEN ('06-15' AND '12-31'))  OR (DATE_FORMAT( niver, '%m-%d' ) BETWEEN ('01-01' AND '01-23')))
+
+SELECT count(cod_aniversariante) FROM aniversariante WHERE 1
+
+
+SELECT count(cod_aniversariante) 
+FROM aniversariante 
+WHERE (DATE_FORMAT( niver, '%m-%d' ) 
+BETWEEN ('06-15' AND '12-31'))  
+OR (DATE_FORMAT( niver, '%m-%d' ) 
+BETWEEN ('01-01' AND '01-23'))

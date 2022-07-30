@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cartao" pageWidth="441" pageHeight="282" columnWidth="401" leftMargin="20" rightMargin="20" topMargin="66" bottomMargin="20">
+	<parameter name="idniver" class="java.lang.String">
+		<parameterDescription><![CDATA["1,2,4,5,6,7,8,9,10,11,12,13,14,15,16,17"]]></parameterDescription>
+	</parameter>
+	<parameter name="ano" class="java.lang.String">
+		<defaultValueExpression><![CDATA["2009"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT aniversariante.cod_aniversariante, aniversariante.`nome` AS aniversariante_nome, aniversariante.`niver` AS aniversariante_niver, aniversariante.`fone` AS aniversariante_fone, aniversariante.`email` AS aniversariante_email, aniversariante.`sexo` AS aniversariante_sexo, aniversariante.`dias` AS aniversariante_dias, tc.tipo_cartao, t.pronome, aniversariante.cargo 
+FROM aniversariante
+LEFT JOIN tipo_cartao AS tc ON tc.cod_tipo_cartao = aniversariante.tipo_cartao_cod_tipo_cartao
+LEFT JOIN tratamento AS t ON t.cod_tratamento = aniversariante.tratamento_cod_tratamento
+WHERE aniversariante.cod_aniversariante IN ($P!{idniver}) ]]>
+	</queryString>
+	<field name="aniversariante_nome" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="aniversariante_niver" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="aniversariante_fone" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="aniversariante_email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="aniversariante_sexo" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="aniversariante_dias" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tipo_cartao" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pronome" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cargo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="pronome">
+		<groupExpression><![CDATA[$F{pronome}]]></groupExpression>
+		<groupHeader>
+			<band/>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="aniversariante_nome">
+		<groupExpression><![CDATA[$F{aniversariante_nome}]]></groupExpression>
+		<groupHeader>
+			<band/>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band/>
+	</title>
+	<pageHeader>
+		<band/>
+	</pageHeader>
+	<columnHeader>
+		<band/>
+	</columnHeader>
+	<detail>
+		<band height="176">
+			<textField>
+				<reportElement x="29" y="157" width="95" height="18" forecolor="#000099"/>
+				<textElement>
+					<font fontName="Monotype Corsiva" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["/"+$P{ano}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM">
+				<reportElement mode="Opaque" x="1" y="157" width="29" height="18" forecolor="#000099"/>
+				<textElement textAlignment="Right">
+					<font fontName="Monotype Corsiva" size="10"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{aniversariante_niver}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="83" y="98" width="188" height="23" forecolor="#000099"/>
+				<textElement textAlignment="Center">
+					<font fontName="CommercialScript BT" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Feliz Aniversário!]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="26" y="23" width="375" height="19" forecolor="#000099"/>
+				<textElement>
+					<font fontName="Monotype Corsiva" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cargo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="83" y="1" width="318" height="23" forecolor="#000099" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Monotype Corsiva" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{aniversariante_nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="26" y="1" width="61" height="22" forecolor="#000099"/>
+				<textElement>
+					<font fontName="Monotype Corsiva" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[( $F{aniversariante_sexo}.toString().equals( "1" ) ? "Senhor": "Senhora" )]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="52" y="41" width="279" height="44" forecolor="#000099"/>
+				<textElement textAlignment="Justified" lineSpacing="Single">
+					<font fontName="CommercialScript BT" size="16"/>
+				</textElement>
+				<text><![CDATA[      Uma das grandes bênçãos da vida é a experiência que os anos nos concedem.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="78" width="279" height="20" forecolor="#000099"/>
+				<textElement>
+					<font fontName="CommercialScript BT" size="16"/>
+				</textElement>
+				<text><![CDATA[        Que Deus abençoe todos os seus dias.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="118" y="157" width="112" height="18" forecolor="#000099"/>
+				<textElement textAlignment="Center">
+					<font fontName="Monotype Corsiva" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Chefe de Gabinete]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="123" y="145" width="100" height="19" forecolor="#000099"/>
+				<textElement textAlignment="Center">
+					<font fontName="Monotype Corsiva" size="10"/>
+				</textElement>
+				<text><![CDATA[Regina Reis]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band/>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

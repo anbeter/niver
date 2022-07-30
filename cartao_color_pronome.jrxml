@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cartao" pageWidth="456" pageHeight="282" columnWidth="416" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<parameter name="idniver" class="java.lang.String">
+		<parameterDescription><![CDATA["1"]]></parameterDescription>
+	</parameter>
+	<parameter name="ano" class="java.lang.String">
+		<defaultValueExpression><![CDATA["2009"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT aniversariante.`nome` AS aniversariante_nome, aniversariante.`niver` AS aniversariante_niver, aniversariante.`fone` AS aniversariante_fone, aniversariante.`email` AS aniversariante_email, aniversariante.`sexo` AS aniversariante_sexo, aniversariante.`dias` AS aniversariante_dias, tc.tipo_cartao, t.pronome, aniversariante.cargo
+FROM aniversariante
+LEFT JOIN tipo_cartao AS tc ON tc.cod_tipo_cartao = aniversariante.tipo_cartao_cod_tipo_cartao
+LEFT JOIN tratamento AS t ON t.cod_tratamento = aniversariante.tratamento_cod_tratamento
+WHERE aniversariante.cod_aniversariante = '$P!{idniver}']]>
+	</queryString>
+	<field name="pronome" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="aniversariante_nome" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cargo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="aniversariante_niver" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="aniversariante_fone" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="aniversariante_email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="aniversariante_sexo" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="aniversariante_dias" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tipo_cartao" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="pronome">
+		<groupExpression><![CDATA[$F{pronome}]]></groupExpression>
+		<groupHeader>
+			<band/>
+		</groupHeader>
+		<groupFooter>
+			<band height="25">
+				<staticText>
+					<reportElement x="62" y="-24" width="202" height="24" forecolor="#000099"/>
+					<textElement textAlignment="Center">
+						<font size="18" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Feliz Aniversário!]]></text>
+				</staticText>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="aniversariante_nome">
+		<groupExpression><![CDATA[$F{aniversariante_nome}]]></groupExpression>
+		<groupHeader>
+			<band/>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<background>
+		<band height="20"/>
+	</background>
+	<title>
+		<band height="68">
+			<textField>
+				<reportElement x="107" y="23" width="290" height="45" forecolor="#000099"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cargo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="150" y="0" width="247" height="23" forecolor="#000099" backcolor="#FFFFFF"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{aniversariante_nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="106" y="0" width="44" height="23" forecolor="#000099" backcolor="#FFFFFF"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pronome}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band/>
+	</pageHeader>
+	<columnHeader>
+		<band/>
+	</columnHeader>
+	<detail>
+		<band height="108">
+			<staticText>
+				<reportElement x="48" y="7" width="279" height="77" forecolor="#000099"/>
+				<textElement textAlignment="Justified">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[      Uma das grandes bênçãos da vida é a experiência que os anos nos concedem.
+
+             Que Deus abençoe todos os seus dias.]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="29">
+			<textField>
+				<reportElement x="2" y="10" width="33" height="18" forecolor="#000099"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{aniversariante_niver}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="35" y="10" width="95" height="18" forecolor="#000099"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["/"+$P{ano}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="130" y="0" width="100" height="28" forecolor="#000099"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Regina Reis
+Chefe de Gabinete]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
